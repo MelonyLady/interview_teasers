@@ -21,3 +21,6 @@ class TestAnagrams(TestCase):
         self.assertFalse(is_anagram("turtle", "fish"))
         self.assertFalse(is_anagram("bog", "dog"))
 
+
+if __name__ == "__main__":
+    main(argv=[''], exit=False)
