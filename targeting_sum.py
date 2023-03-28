@@ -9,3 +9,11 @@ target sum, the function should return an empty array.
 Note that the target sum has to be obtained by summing two different numbers in the
 #array. You cannot add a single integer to itself in order to obtain the target sum."""
 
+def targetting_sum(numbers, t_sum):
+    for ind1 in range(len(numbers)):
+        for ind2 in range(len(numbers)):
+            num1 = numbers[ind1]
+            num2 = numbers[ind2]
+            if num1 + num2 == t_sum and num1 != num2:
+                return [num1, num2, t_sum]
+    return []
