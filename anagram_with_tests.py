@@ -17,3 +17,7 @@ class TestAnagrams(TestCase):
         self.assertTrue(is_anagram("dog", "god"))
         self.assertTrue(is_anagram("angel", "glean"))
 
+    def test_is_anagram_false(self):
+        self.assertFalse(is_anagram("turtle", "fish"))
+        self.assertFalse(is_anagram("bog", "dog"))
+
