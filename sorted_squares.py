@@ -13,6 +13,7 @@ print(sorted_squares([-10, 25, -65, 3, 10]))
 print("************* End Sorted Squares *******************")
 
 
+# this does the same as the above but in shortened form.
 def sorted_squares_comp(numbers):
     return sorted([n **2 for n in numbers])
 
