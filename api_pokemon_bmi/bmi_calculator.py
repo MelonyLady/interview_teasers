@@ -16,5 +16,5 @@ def get_health_feedback(bmi):
 
 if __name__ == '__main__':
     pokemon = pokemon.get_random_pokemon()
-    pokemon_bmi = calculate_bmi(pokemon['weight'], pokemon['height'])
-    print(f"The BMI of {pokemon_api['name']} is {get_health_feedback(pokemon_bmi)} when compared to human standards.")
+    pokemon_bmi = calculate_bmi(pokemon['Weight'], pokemon['Height'])
+    print(f"The BMI of {pokemon['Name']} is {get_health_feedback(pokemon_bmi)} when compared to human standards.")
