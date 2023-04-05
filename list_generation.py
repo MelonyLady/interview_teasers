@@ -4,12 +4,8 @@
 
 
 def create_list(morewords):
-    numchar = len(morewords)
-    result = []
-    for letter in range(numchar):
-        result.append(morewords)
-    return result
+    return [morewords for i in range(len(morewords))]
 
 
-print(create_list("Code"))
-print(create_list("lovely"))
+print(create_list("Code"))  # should return the word "Code" 4 times
+print(create_list("lovely"))  # should return the word "lovely" 6 times
